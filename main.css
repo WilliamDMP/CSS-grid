@@ -1,11 +1,33 @@
 body {
-    background-color: rgba(245, 23, 23, 0.26);
+    background-color: #eee;
     height: 100%;
+    box-sizing: border-box;
+    margin: 0;
 }
 
 .grid {
-    display: grid;
-    background-color: rgba(0,0,0,0.4);
-    grid-template-columns: repeat(4, 50px);
-    grid-template-rows: repeat(2, 50px);
+    display: grid;  
+    background-color: bisque;   
+    grid-template-areas: "hd hd"
+                         "ad ae"
+                         "ad ae"
+                         "ft ft";
+    gap: 30px;                     
+
+}
+
+.header {
+    grid-area: hd;
+}
+
+.aside {
+    grid-area: ad;
+}
+
+.article {
+    grid-area: ae;
+}
+
+.footer {
+    grid-area: ft;
 }
