@@ -3,31 +3,40 @@ body {
     height: 100%;
     box-sizing: border-box;
     margin: 0;
+    height: 100%;
 }
 
 .grid {
     display: grid;  
     background-color: bisque;   
+    row-gap: 10px;
+    column-gap: 10px;  
     grid-template-areas: "hd hd"
                          "ad ae"
                          "ad ae"
                          "ft ft";
-    gap: 30px;                     
-
+    grid-template-columns: repeat(2, 400px);                     
+    grid-template-rows: repeat(4, 50px);  
+    justify-items: stretch;
+    align-items: stretch;
 }
 
 .header {
     grid-area: hd;
+    background-color: aqua;
 }
 
 .aside {
     grid-area: ad;
+    background-color: blue;
 }
 
 .article {
     grid-area: ae;
+    background-color: blueviolet;
 }
 
 .footer {
     grid-area: ft;
+    background-color: chartreuse;
 }
