@@ -1,5 +1,33 @@
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    grid-template-areas: "hd hd"
+                         "art ad"
+                         "art ad" 
+                         "art ad"
+                         "art .."
+                         "art .."
+                         "ft ft"  ;
+    grid-column: minmax(40px, auto);   
+    grid-row: minmax(40px, auto);                  
+}
+
+.header {
+    grid-area: hd;
+}
+
+.articulo {
+    display: grid;
+    grid-area: art;
+    grid-auto-rows: auto;
+    border: 1px solid white;
+}
+
+.aside {
+    grid-area: ad;
+}
+
+.footer {
+    grid-area: ft;
 }

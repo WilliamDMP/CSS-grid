@@ -3,26 +3,37 @@
     padding: 0;
 }
 
-.titulo {
-    text-align: center;
-    padding: 30px;
+html {
+    height: 100%;
 }
 
 body {
     background-color: #eee;
     box-sizing: border-box; 
+    height: 100%;
+    width: 100%;
+}
+
+.titulo {
+    text-align: center;
+    padding: 10px;
 }
 
 .grid {
     border: 1px solid rgba(0,0,0,0.30);
     text-align: center;
-    width: 60%;
+    width: 80%;
+    height: 90%;
     margin: auto;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6) );
 }
 
 .grid > div {
     box-shadow: 2px 2px 12px rgba(0,0,0,0.30);
-    background-color: aqua;
+    background-color: rgba(10, 10, 10, 0.829);
     font-size: large;
     padding: 10px;
+    color: white;
+    border-radius: 6px;
+    margin: 10px;
 }
